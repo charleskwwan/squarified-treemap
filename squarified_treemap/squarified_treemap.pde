@@ -1,6 +1,8 @@
 import java.util.Map;
+import java.util.Queue;
 
 TreeNode root;
+Queue<TreeNode> q;
 
 void setup() {
   selectInput("Select a file to process:", "treeFromFile");

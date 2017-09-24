@@ -1,8 +1,10 @@
 import java.util.Map;
 import java.util.Queue;
+import java.util.Collections;
 
 TreeNode root;
 Queue<TreeNode> q;
+import java.util.Collections;
 
 void setup() {
   selectInput("Select a file to process:", "treeFromFile");
@@ -77,4 +79,22 @@ void normalize(TreeNode node, float normfact) {
   for (TreeNode c : node.children) {
     normalize(c, normfact);
   }
+  Collections.sort(node.children);
+}
+
+float aspectRatio(ArrayList<Float> weights, int w) {
+    if (weights.size() <= 0) return 0;
+    float area = 0;
+    int total = width * height;
+
+    float max = weights.get(0) * total;
+    float min = weights.get(0) * total;
+    for (int i = 0; i < weights.size(); i++) {
+      area += weights.get(i) * total;
+      if (min > (weights.get(i) * total)) min = weights.get(i) * total;
+      if (max < weights.get(i) * total) max = weights.get(i) * total;
+    }
+    
+    return max((w*w*max)/(area*area), (area*area)/(w*w*min));
+  
 }

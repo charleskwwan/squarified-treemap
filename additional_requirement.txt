@@ -1,0 +1,19 @@
+COMP177
+Team members: Stephanie Wong (swong02), Charles Wan (kwan01)
+09/25/17
+a1
+additional_requirements.txt
+
+Label Info Box:
+Typically, squarified treemaps are used to visualize file trees, where nonleaf
+nodes represent folders/directories, and leaf nodes are files. Furthermore, the
+weight of a node represents the size of the folder/file. As such, a useful UI
+component would be too see exactly what file a cell/rectangle on the treemap
+represents and its size. Therefore, we implemented an info box that displays the
+id and weight of the rectangle the mouse is hovering over.
+
+Ancestor highlighting:
+Although framing can demonstrate the hierarchy of the tree, it is sometimes not
+clear depending on the frame thickness and child density. Because colors are
+more salient, we decided to implement a highlighting system that colors the
+rectangle that the mouse is on, as well as all its ancestors in a gradient.

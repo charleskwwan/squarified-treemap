@@ -1,1 +1,20 @@
-Team members: Stephanie Wong, Charles Wan
+COMP177
+Team members: Stephanie Wong (swong02), Charles Wan (kwan01)
+09/25/17
+a1
+team.txt
+
+What each team member did:
+Mostly did partner programming, because the math was somewhat complicated.
+Together:
+    - Squarified treemap algorithm implementation
+    - Aspect Ratio / worst()
+    - Additional requirement
+What follows is partner specific work.
+Stephanie:
+    - Data parsing
+    - Layout Row
+Charles:
+    - Framing math
+    - TreeNode
+    - Mouse interaction
